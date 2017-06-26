@@ -60,6 +60,7 @@ export class ArchivosComponent implements OnInit, AfterViewInit {
     console.log(urlArchivo);
     const _return: boolean = false;
     if (_return) { return; }
+    
     const activex = new ActiveXObject("Scripting.FileSystemObject");
     activex.DeleteFile(urlArchivo);
   }
